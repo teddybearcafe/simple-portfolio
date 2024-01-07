@@ -1,17 +1,27 @@
 <!DOCTYPE html>
 <html lang="ja">
 
-<head>
+<head prefix="og: https://ogp.me/ns#">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="シンプルなポートフォリオ">
+    <meta name="robots" content="noindex">
+    <link rel="icon" href="./img/favicon.ico">
+    <!-- OGP -->
+    <meta property="og:url" content="https://h2office.jp/smpl/simple-portfolio/" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="シンプルなポートフォリオ" />
+    <meta property="og:description" content="シンプルなポートフォリオのサンプルです" />
+    <meta property="og:site_name" content="シンプルなポートフォリオ" />
+    <meta property="og:image" content="https://h2office.jp/smpl/simple-portfolio/img/FBcover.png" />
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:site" content="@teddybearcafe" />
     <!-- reset.css ress -->
     <link rel="stylesheet" href="https://unpkg.com/ress/dist/ress.min.css" />
-    <link rel="stylesheet" href="style.css">
-
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Sawarabi+Gothic&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
     <title>シンプルなポートフォリオ</title>
 </head>
 
@@ -80,11 +90,11 @@
             <dd>予報データ更新しました</dd>
         </dl>
     </section>
-        <!-- contact -->
-        <section id="contact" class="wrapper">
-            <h2 class="sec-title">Contact</h2>
-            <p>お問い合わせは以下のフォームから</p>
-            <form action="#" method="post">
+    <!-- contact -->
+    <section id="contact" class="wrapper">
+        <h2 class="sec-title">Contact</h2>
+        <p>お問い合わせは以下のフォームから</p>
+        <form action="#" method="post">
             <dl>
                 <dt><label for="name">お名前</label></dt>
                 <dd><input type="text" id="name"></dd>
@@ -94,8 +104,8 @@
                 <dd><textarea id="content" cols="30" rows="10"></textarea></dd>
             </dl>
             <div class="button"><input type="submit" value="送信"></div>
-            </form>
-        </section>
+        </form>
+    </section>
 </body>
 
 </html>

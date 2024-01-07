@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="シンプルなポートフォリオ">
+    <!-- reset.css ress -->
+    <link rel="stylesheet" href="https://unpkg.com/ress/dist/ress.min.css" />
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Sawarabi+Gothic&display=swap" rel="stylesheet">
+    <title>シンプルなポートフォリオ</title>
+</head>
+
+<body>
+    <!-- Header -->
+    <header>
+        <h1 class="site-title">
+            <a href="#"> Portfolio </a>
+        </h1>
+        <nav>
+            <ul>
+                <li><a href="#about">ABOUT</a></li>
+                <li><a href="#works">WORKS</a></li>
+                <li><a href="#news">NEWS</a></li>
+                <li><a href="#contact">CONTACT</a></li>
+                <li><a href="https://www.Twitter.com" target="_blank" rel="noopener noreferrer"><img
+                            src="./img/x-logo.png" alt="Twitter" class="icon"></a></li>
+            </ul>
+        </nav>
+    </header>
+    <div id="main">
+        <picture>
+            <source media="(min-width: 600px)" srcset="https://picsum.photos/id/237/1920/1080">
+            <img src="https://picsum.photos/id/237/1920/1080" alt="" srcset="">
+        </picture>
+    </div>
+    <!-- about -->
+    <section id="about" class="wrapper">
+        <h2 class="sec-title">About</h2>
+        <ul>
+            <li>○○○○○株式会社</li>
+            <li>Web制作会社として設立</li>
+            <li>Webサイト・アプリ開発を承ります</li>
+            <li>メールアドレス：xxxxx@xxx.com</li>
+        </ul>
+        <p>Webサイト制作やアプリ開発を得意としています。また、Web講師としても活動しており新人の育成をしたい企業も申し込みを承ります。</p>
+    </section>
+    <!-- works -->
+    <section id="works" class="wrapper">
+        <h2 class="sec-title">Works</h2>
+        <ul>
+            <li><img src="https://picsum.photos/id/250/640/425" alt="works1"></li>
+            <li><img src="https://picsum.photos/id/2/640/425" alt="works2"></li>
+            <li><img src="https://picsum.photos/id/300/640/425" alt="works3"></li>
+            <li><img src="https://picsum.photos/id/325/640/425" alt="works4"></li>
+            <li><img src="https://picsum.photos/id/953/640/425" alt="works5"></li>
+            <li><img src="https://picsum.photos/id/111/640/425" alt="works6"></li>
+            <li><img src="https://picsum.photos/id/84/640/425" alt="works7"></li>
+            <li><img src="https://picsum.photos/id/60/640/425" alt="works8"></li>
+            <li><img src="https://picsum.photos/id/20/640/425" alt="works9"></li>
+        </ul>
+    </section>
+    <!-- news -->
+    <section id="news" class="wrapper">
+        <h2 class="sec-title">News</h2>
+        <dl>
+            <dt>2023/10/29</dt>
+            <dd>本サイトをリリースしました</dd>
+            <dt>2023/11/29</dt>
+            <dd>プログラミングチュートリアル動画を開始しました</dd>
+            <dt>2023/11/30</dt>
+            <dd>【チャンネル登録】よろしくお願いいたします。</dd>
+            <dt>2023/12/02</dt>
+            <dd>新たなメニュー始めました</dd>
+            <dt>2023/12/11</dt>
+            <dd>予報データ更新しました</dd>
+        </dl>
+    </section>
+        <!-- contact -->
+        <section id="contact" class="wrapper">
+            <h2 class="sec-title">Contact</h2>
+            <p>お問い合わせは以下のフォームから</p>
+            <form action="#" method="post">
+            <dl>
+                <dt><label for="name">お名前</label></dt>
+                <dd><input type="text" id="name"></dd>
+                <dt><label for="email">メールアドレス</label></dt>
+                <dd><input type="email" id="email"></dd>
+                <dt><label for="content">内容</label></dt>
+                <dd><textarea id="content" cols="30" rows="10"></textarea></dd>
+            </dl>
+            <div class="button"><input type="submit" value="送信"></div>
+            </form>
+        </section>
+</body>
+
+</html>

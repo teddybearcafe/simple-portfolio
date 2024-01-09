@@ -131,6 +131,13 @@ header li img.icon {
     opacity: 0.7;
 }
 
+/* works2 */
+.slider-content{
+    display: flex;
+    flex-direction: column;
+    margin: 0 5px 0 5px;
+}
+
 /* news */
 #news dl {
     display: flex;

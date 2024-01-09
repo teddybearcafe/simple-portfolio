@@ -1,6 +1,13 @@
-const mySwiper = new Swiper('.swiper', {
+const initSwiper = () => {
+  const mySwiper = new Swiper('.swiper', {
     // Optional parameters
     loop: true,
+    loopAdditionalSlides: 1,
+    slidesPerView: 'auto',
+    speed: 8000,
+    autoplay:{
+      delay: 0,
+    },
   
     // If we need pagination
     pagination: {
@@ -18,3 +25,8 @@ const mySwiper = new Swiper('.swiper', {
       el: '.swiper-scrollbar',
     },
   });
+};
+
+window.addEventListener('load', function(){
+  initSwiper();
+});

@@ -137,6 +137,15 @@ header li img.icon {
     flex-direction: column;
     margin: 0 5px 0 5px;
 }
+.swiper-slide {
+    &:not(.swiper-slide-visible) {
+      .slide {
+        pointer-events: none;
+        opacity: .3;
+      }
+    }
+  }
+
 
 /* news */
 #news dl {
@@ -258,6 +267,7 @@ header li img.icon {
     -webkit-line-clamp: 1;
     overflow: hidden;
 }
+
 
 /* SP */
 @media screen and (max-width: 960px) {

@@ -3,10 +3,18 @@ const initSwiper = () => {
     // Optional parameters
     loop: true,
     loopAdditionalSlides: 1,
-    slidesPerView: 'auto',
-    speed: 8000,
+    //slidesPerView: 'auto',
+    watchSlidesProgress: true,
+    //speed: 8000,
     autoplay:{
-      delay: 0,
+      delay: 4000,
+      //disableOnInteraction: false,
+        },
+    breakpoints: {
+      // スライドの表示枚数：600px以上の場合
+      600: {
+        slidesPerView: 3,
+      }
     },
   
     // If we need pagination

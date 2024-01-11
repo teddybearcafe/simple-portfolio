@@ -227,6 +227,11 @@ header li img.icon {
     overflow: hidden;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     margin: 10px;
+    transition: all 0.3s;
+}
+.card:hover{
+    transform: scale(0.95, 0.95);
+    opacity: 0.5;
 }
 
 .card img {

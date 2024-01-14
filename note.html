@@ -1,11 +1,85 @@
 <!DOCTYPE html>
 <html lang="ja">
-<head>
+
+<head prefix="og: https://ogp.me/ns#">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <meta name="description" content="シンプルなポートフォリオ">
+    <meta name="robots" content="noindex">
+    <link rel="icon" href="./img/favicon.ico">
+    <!-- OGP -->
+    <meta property="og:url" content="https://h2office.jp/smpl/simple-portfolio/" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="シンプルなポートフォリオ" />
+    <meta property="og:description" content="シンプルなポートフォリオのサンプルです" />
+    <meta property="og:site_name" content="シンプルなポートフォリオ" />
+    <meta property="og:image" content="https://h2office.jp/smpl/simple-portfolio/img/FBcover.png" />
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:site" content="@teddybearcafe" />
+    <!-- reset.css ress -->
+    <link rel="stylesheet" href="https://unpkg.com/ress/dist/ress.min.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Sawarabi+Gothic&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="style.css?Ver=1.13.3">
+    <title>シンプルなポートフォリオ</title>
 </head>
+
 <body>
-    
+    <!-- Header -->
+    <header>
+        <h1 class="site-title">
+            <a href="./">
+                <div class="site-title-main">H2Office</div>
+                <div class="site-title-sub">想いをカタチに、ご縁をつなぐ。</div>
+            </a>
+        </h1>
+        <nav>
+            <ul>
+                <li><a href="./about.html">About</a></li>
+                <li><a href="./works.html">Works</a></li>
+                <li><a href="./archive.html">Blog</a></li>
+                <li><a href="./index.html#contact">Contact</a></li>
+                <li><a href="https://www.Twitter.com" target="_blank" rel="noopener noreferrer"><img
+                            src="./img/x-logo.png" alt="Twitter" class="icon"></a></li>
+            </ul>
+        </nav>
+    </header>
+    <div class="mg-30"></div>
+    <section class="note-top wrapper">
+        <div class="note-top-body">
+        <div class="note-top-left">
+        <h1 class="note-title">noteのテストタイトルです。</h1>
+        <time datetime="2024-01-14">2024.01.14</time>
+        </div>
+        <div class="note-top-right">
+        <picture>
+            <source media="(min-width: 600px)" srcset="https://picsum.photos/756/460">
+            <img src="https://picsum.photos/756/460" alt="" srcset="">
+        </picture>
+        </div>
+
+        </div>
+    </section>
+    <section id="author_profile" class="wrapper">
+        <div class="author_profile-body">
+        <!-- <p class="label">この記事を書いた人</p> -->
+        <div class="left"><img src="./img/my-yachting.jpg" alt="author image" /></div>
+        <div class="right">
+            <p class="author_name">hiro.</p>
+            <p>岐阜県海津市生まれ。横浜を拠点にウェブ制作と気象防災アドバイザーとして活動中。<br>
+                頻発する自然災害のたびに、人と人との繋がり、絆の尊さを感じさせられます。大切な人に想いを伝える、届けたい相手に想いを届ける。そんなお手伝いができたらと思います。</p>
+            <p>趣味はセーリング、マリンダイビング。料理・製菓製パン。風景写真（ContaxAria）</p>
+            <ul class="author_sns">
+                <li><i class="icon-facebook"></i><a href="https://www.facebook.com/kenji.nagata.18"
+                        target="_blank">FaceBook</a></li>
+            </ul>
+        </div>            
+        </div>
+
+    </section>
+
 </body>
+
 </html>

@@ -52,6 +52,20 @@ li {
     line-height: 30px;
 }
 
+/* tab */
+@media screen and (max-width: 960px) {
+    .site-title a {
+        align-items: center;
+    }
+}
+
+/* sp */
+@media screen and (max-width: 600px) {
+    .site-title {
+        margin-top: 20px;
+    }
+}
+
 .sec-title {
     font-size: 1.5rem;
     text-align: center;
@@ -62,7 +76,8 @@ li {
     margin: 30px 0;
 }
 
-/* top arrow */
+/* top arrow
+-----------------------------------*/
 .top-button {
     width: 60px;
     height: 60px;
@@ -120,9 +135,10 @@ li {
     }
 }
 
-/* more button */
+/* more button
+-----------------------------------*/
 /*丸がボタンに変形する*/
-.btn-more{
+.btn-more {
     width: 100%;
     display: flex;
     justify-content: center;
@@ -177,7 +193,8 @@ li {
 }
 
 
-/* header */
+/* header
+-----------------------------------*/
 header {
     max-width: 960px;
     display: flex;
@@ -212,7 +229,47 @@ header li img.icon {
     width: 30px;
 }
 
-/* main */
+/* tab */
+@media screen and (max-width: 960px) {
+    header {
+        flex-direction: column;
+        height: auto;
+        line-height: 40px;
+        margin-top: 20px;
+    }
+
+    header ul li {
+        margin-left: 5px;
+        margin-right: 5px;
+    }
+
+    header li img.icon {
+        width: 20px;
+        margin-top: 15px;
+    }
+}
+/* sp */
+@media screen and (max-width: 600px) {
+    header {
+        flex-direction: column;
+        height: auto;
+        line-height: 40px;
+        margin-top: 20px;
+    }
+
+    header li {
+        font-size: 0.8rem;
+        margin-left: 20px;
+    }
+
+    header li img.icon {
+        width: 20px;
+        margin-top: 15px;
+    }
+}
+
+/* main visual
+-----------------------------------*/
 #main {
     position: relative;
 }
@@ -236,7 +293,6 @@ header li img.icon {
     text-align: center;
     transition: all 0.3s;
 }
-
 .mv-text {
     font-size: 3rem;
     font-weight: 800;
@@ -245,28 +301,38 @@ header li img.icon {
     opacity: 0;
     animation: fadeInOut 6s infinite;
 }
+@keyframes fadeInOut {
+    0% {
+        opacity: 0;
+    }
+    25% {
+        opacity: 1;
+    }
+    75% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+/* tab */
+@media screen and (max-width: 960px) {
+    .mv-text {
+        font-size: 2rem;
+    }
+}
+/* sp */
+@media screen and (max-width: 600px) {
+    .mv-text {
+        font-size: 1.6rem;
+    }
+}
 
 .show {
     display: block;
 }
 
-@keyframes fadeInOut {
-    0% {
-        opacity: 0;
-    }
 
-    25% {
-        opacity: 1;
-    }
-
-    75% {
-        opacity: 1;
-    }
-
-    100% {
-        opacity: 0;
-    }
-}
 
 /* about */
 #about ul {
@@ -359,7 +425,8 @@ header li img.icon {
     color: #24292e;
 }
 
-/* blog */
+/* blog
+-----------------------------------*/
 .cards {
     display: flex;
     flex-wrap: wrap;
@@ -388,7 +455,8 @@ header li img.icon {
 
 .card img {
     width: 100%;
-    height: 200px;
+    /* height: 200px; */
+    height: auto;
     object-fit: cover;
 }
 
@@ -410,7 +478,41 @@ header li img.icon {
     -webkit-line-clamp: 1;
     overflow: hidden;
 }
+/* tab */
+@media screen and (max-width: 960px) {
+    .card {
+        width: calc(49% - 20px);
+    }
+}
+/* sp */
+@media screen and (max-width: 600px) {
 
+    .card {
+        width: 100%;
+        height: auto;
+        display: flex;
+    }
+
+    .card a {
+        width: 100%;
+        display: flex;
+    }
+
+    .card img {
+        width: 50%;
+        height: auto;
+    }
+
+    .ellipsis {
+        -webkit-line-clamp: 3;
+    }
+}
+
+
+
+/* --------------------------------------------------- */
+/* note.html */
+/* --------------------------------------------------- */
 
 /* note */
 .note-top-body {
@@ -551,6 +653,11 @@ header li img.icon {
     }
 }
 
+
+/* --------------------------------------------------- */
+/* works.html */
+/* --------------------------------------------------- */
+
 /* works-contents */
 #works2 ul {
     display: flex;
@@ -574,6 +681,9 @@ header li img.icon {
     opacity: 0.7;
 }
 
+/* --------------------------------------------------- */
+/* about.html */
+/* --------------------------------------------------- */
 /* about-contents */
 /* company */
 #company dl {
@@ -597,69 +707,10 @@ header li img.icon {
 
 
 
-/* tab */
-@media screen and (max-width: 960px) {
 
-    /* header */
-    header {
-        flex-direction: column;
-        height: auto;
-        line-height: 40px;
-        margin-top: 20px;
-    }
-
-    header ul li {
-        margin-left: 5px;
-        margin-right: 5px;
-    }
-
-    header li img.icon {
-        width: 20px;
-        margin-top: 15px;
-    }
-
-    .site-title a {
-        align-items: center;
-    }
-
-    .mv-text {
-        font-size: 2rem;
-    }
-
-    .card {
-        width: calc(49% - 20px);
-    }
-
-}
 
 /* sp */
 @media screen and (max-width: 600px) {
-    .site-title {
-        margin-top: 20px;
-    }
-
-    /* header */
-    header {
-        flex-direction: column;
-        height: auto;
-        line-height: 40px;
-        margin-top: 20px;
-    }
-
-    header li {
-        font-size: 0.8rem;
-        margin-left: 20px;
-    }
-
-    header li img.icon {
-        width: 20px;
-        margin-top: 15px;
-    }
-
-    .mv-text {
-        font-size: 1.6rem;
-    }
-
     /* contact */
     #contact dl {
         flex-direction: column;
@@ -672,27 +723,6 @@ header li img.icon {
 
     #contact dd {
         width: 100%;
-    }
-
-    /* card */
-    .card {
-        width: 100%;
-        height: auto;
-        display: flex;
-    }
-
-    .card a {
-        width: 100%;
-        display: flex;
-    }
-
-    .card img {
-        width: 50%;
-        height: auto;
-    }
-
-    .ellipsis {
-        -webkit-line-clamp: 3;
     }
 
     /* note */
@@ -709,28 +739,28 @@ header li img.icon {
 
     /* works2 */
 
-            #works2 ul {
-                flex-direction: column;
-            }
-    
-            #works2 ul li {
-                width: 100%;
-            }
+    #works2 ul {
+        flex-direction: column;
+    }
+
+    #works2 ul li {
+        width: 100%;
+    }
 
     /* about-contents */
-            /* company */
-            #company dl {
-                flex-direction: column;
-            }
-    
-            #company dt {
-                width: 100%;
-                border-bottom: none;
-                padding-bottom: 0;
-            }
-    
-            #company dd {
-                width: 100%;
-                padding-top: 0;
-            }
+    /* company */
+    #company dl {
+        flex-direction: column;
+    }
+
+    #company dt {
+        width: 100%;
+        border-bottom: none;
+        padding-bottom: 0;
+    }
+
+    #company dd {
+        width: 100%;
+        padding-top: 0;
+    }
 }

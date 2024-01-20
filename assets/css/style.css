@@ -355,7 +355,9 @@ header li img.icon {
     margin: 0 5px 0 5px;
     align-items: center;
 }
-
+.swiper{
+    margin-bottom: 30px;
+}
 .swiper-slide {
     &:not(.swiper-slide-visible) {
         .slide {
@@ -374,6 +376,12 @@ header li img.icon {
     padding: 10px 0;
 }
 
+.wx-work{
+    border: 1px solid #24292e;
+    height: 30px;
+    width: 100%;
+    margin-bottom: 30px;
+}
 
 /* contact */
 #contact p {
@@ -425,6 +433,25 @@ header li img.icon {
     color: #24292e;
 }
 
+/* sp */
+@media screen and (max-width: 600px) {
+
+    #contact dl {
+        flex-direction: column;
+    }
+
+    #contact dt {
+        width: 100%;
+        margin-bottom: 5px;
+    }
+
+    #contact dd {
+        width: 100%;
+    }
+}
+
+
+
 /* blog
 -----------------------------------*/
 .cards {
@@ -434,11 +461,12 @@ header li img.icon {
     //height: 100vh;
     width: 100%;
     margin: 0 auto;
+    margin-bottom: 30px;
 }
 
 .card {
     width: calc(33% - 20px);
-    height: 300px;
+    height: 250px;
     //width: 300px;
     border: 1px solid #ddd;
     border-radius: 8px;
@@ -461,15 +489,27 @@ header li img.icon {
 }
 
 .card-content {
-    padding: 20px;
+    padding: 10px 20px;
 }
 
 .card h3 {
     margin-top: 0;
+    font-size: 1.3rem;
+    margin-bottom: 5px;
 }
-
+.card-categories li {
+    font-size: 0.8rem;
+    border: 1px solid #333;
+    border-radius: 3px;
+    width: fit-content;
+    padding: 0 3px;
+}
 .card p {
     color: #555;
+}
+.card-time{
+    display: flex;
+    justify-content: flex-end;
 }
 
 .ellipsis {
@@ -482,6 +522,9 @@ header li img.icon {
 @media screen and (max-width: 960px) {
     .card {
         width: calc(49% - 20px);
+    }
+    .card img {
+        height: 55%;
     }
 }
 /* sp */
@@ -504,7 +547,7 @@ header li img.icon {
     }
 
     .ellipsis {
-        -webkit-line-clamp: 3;
+        -webkit-line-clamp: 2;
     }
 }
 
@@ -513,8 +556,6 @@ header li img.icon {
 /* --------------------------------------------------- */
 /* note.html */
 /* --------------------------------------------------- */
-
-/* note */
 .note-top-body {
     display: flex;
     width: 100%;
@@ -532,6 +573,23 @@ header li img.icon {
     border-radius: 10px;
     height: auto;
 }
+
+/* sp */
+@media screen and (max-width: 600px) {
+
+    .note-top-body {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .note-top-left,
+    .note-top-right {
+        width: 100%;
+    }
+}
+
+
 
 /*プロフィール枠*/
 .author_profile-body {
@@ -657,8 +715,6 @@ header li img.icon {
 /* --------------------------------------------------- */
 /* works.html */
 /* --------------------------------------------------- */
-
-/* works-contents */
 #works2 ul {
     display: flex;
     flex-wrap: wrap;
@@ -681,11 +737,21 @@ header li img.icon {
     opacity: 0.7;
 }
 
+/* sp */
+@media screen and (max-width: 600px) {
+    #works2 ul {
+        flex-direction: column;
+    }
+
+    #works2 ul li {
+        width: 100%;
+    }
+}
+
+
 /* --------------------------------------------------- */
 /* about.html */
 /* --------------------------------------------------- */
-/* about-contents */
-/* company */
 #company dl {
     display: flex;
     flex-wrap: wrap;
@@ -704,49 +770,8 @@ header li img.icon {
     border-bottom: 1px solid #c8c8c8;
     padding: 15px;
 }
-
-
-
-
-
 /* sp */
 @media screen and (max-width: 600px) {
-    /* contact */
-    #contact dl {
-        flex-direction: column;
-    }
-
-    #contact dt {
-        width: 100%;
-        margin-bottom: 5px;
-    }
-
-    #contact dd {
-        width: 100%;
-    }
-
-    /* note */
-    .note-top-body {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .note-top-left,
-    .note-top-right {
-        width: 100%;
-    }
-
-    /* works2 */
-
-    #works2 ul {
-        flex-direction: column;
-    }
-
-    #works2 ul li {
-        width: 100%;
-    }
-
     /* about-contents */
     /* company */
     #company dl {
@@ -764,3 +789,8 @@ header li img.icon {
         padding-top: 0;
     }
 }
+
+
+
+
+

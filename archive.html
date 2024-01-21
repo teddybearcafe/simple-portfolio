@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="シンプルなポートフォリオ">
     <meta name="robots" content="noindex">
-    <link rel="icon" href="./img/favicon.ico">
+    <link rel="icon" href="./assets/img/favicon.ico">
     <!-- OGP -->
     <meta property="og:url" content="https://h2office.jp/smpl/simple-portfolio/" />
     <meta property="og:type" content="website" />
@@ -21,8 +21,8 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Sawarabi+Gothic&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="./css/swiper-bundle.min.css" />
-    <link rel="stylesheet" href="style.css?Ver=1.13.3">
+    <link rel="stylesheet" href="./assets/css/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="./assets/css/style.css">
     <title>シンプルなポートフォリオ</title>
 </head>
 
@@ -42,7 +42,7 @@
                 <li><a href="#">Blog</a></li>
                 <li><a href="./index.html#contact">CONTACT</a></li>
                 <li><a href="https://www.Twitter.com" target="_blank" rel="noopener noreferrer"><img
-                            src="./img/x-logo.png" alt="Twitter" class="icon"></a></li>
+                            src="./assets/img/x-logo.png" alt="Twitter" class="icon"></a></li>
             </ul>
         </nav>
     </header>
@@ -53,10 +53,15 @@
         <div class="cards">
             <div class="card">
                 <a href="./note.html">
-                    <img src="https://placekitten.com/300/200" alt="Card Image">
+                    <img src="https://placekitten.com/1200/630" alt="Card Image">
                     <div class="card-content">
-                        <h3>Card 1</h3>
-                        <p class="ellipsis">This is a sample card with some content.</p>
+                        <h3 class="card-title ellipsis">Card 1 This is a sample card with some content.</h3>
+                        <div class="card-meta">
+                            <ul class="card-categories">
+                                <li>お知らせ</li>
+                            </ul>
+                            <time class="card-time" datetime="2024-01-20">2024.01.20</time>
+                        </div>
                     </div>
                 </a>
             </div>
@@ -102,7 +107,7 @@
             </div>
         </div>
     </section>
-    <script src="./js/swiper-bundle.min.js"></script>
-    <script src="./js/swiper.js"></script>
+    <script src="./assets/js/swiper-bundle.min.js"></script>
+    <script src="./assets/js/swiper.js"></script>
 </body>
 </html>
